@@ -1,0 +1,24 @@
+// import-Anweisung für unsere HashMap
+import java.util.HashMap;
+
+public class HashMapTest {
+	
+	public static void main(String[] args) {
+		
+		HashMap map = new HashMap();
+		
+		// Drei Objekte der Klasse Student werden erzeugt.
+		Student st1 = new Student("Mayer", "Kai Uwe", 444999);
+		Student st2 = new Student("Beckmann", "Niels", 132425);
+		Student st3 = new Student("Lopez", "Mario", 973491);
+		
+		//Einfügen der Objekte in eine HashMap
+		//Matrikelnummer wird als Key eingetragen
+		map.put(new Integer(st1.getMatrikelnummer()), st1);
+		map.put(new Integer(st2.getMatrikelnummer()), st2);
+		
+		// Student st1 wird duch st3 ersetzt, da die
+		// Matrikelnummer schon als Student vergeben worden ist.
+		map.put(new Integer(st3.getMatrikelnummer()), st3);
+	}
+}
