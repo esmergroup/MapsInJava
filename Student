@@ -1,0 +1,19 @@
+public class Student {
+	
+	// Attribute name, vorname eines Studenten
+	String name, vorname;
+	// Atribut matrikelnummer welches eindeutig ist.
+	int matrikelnummer;
+	
+	//Konstruktor für einen Studenten
+	public Student(String name, String vorname, int matrikelnummer) {
+		this.name = name;
+		this.vorname = vorname;
+		this.matrikelnummer = matrikelnummer;
+	}
+	
+	//Getter Methode für Matrikelnummer
+	public int getMatrikelnummer() {
+		return this.matrikelnummer;
+	}
+}
